@@ -38,7 +38,7 @@ var url =  'https://xxxxx/exec'
       fetch(url, {
         method: 'POST',
         body: formData,
-        //mode:'no-cors'
+        redirect: "follow"
       })
       .then(response => {        
         return response.json()})
@@ -135,7 +135,8 @@ var url =  'https://xxxxx/exec'
                 formData.append('data',obj_json);        
                 fetch(url, {
                      method: 'POST',
-                     body: formData,       
+                     body: formData, 
+                     redirect: "follow"
                 })
                 .then(response => {        
                       return response.json()})
@@ -196,7 +197,8 @@ var url =  'https://xxxxx/exec'
       formData.append('data',obj_json);        
       fetch(url, {
         method: 'POST',
-        body: formData,       
+        body: formData,
+        redirect: "follow"
       })
       .then(response => {        
         return response.json()})
